@@ -123,6 +123,6 @@
     @apply text-gray-700;
   }
   a {
-    @apply text-sm tracking-wide text-gray-700
+    @apply font-medium text-gray-700
   }
 }

@@ -21,8 +21,27 @@ export const metadata: Metadata = {
   applicationName: "Pär Nilssons Portfolio",
   title: "Pär Nilsson",
   description:
-    "Fullstack developer Pär Nilsson helps businesses with web development, website improvements, infrastructure, Azure cloud solutions, and GDPR compliance. Supporting companies in building, modernizing, and maintaining their digital presence",
+    "Fullstack developer Pär Nilsson helps businesses with web development, website improvements, infrastructure, Azure cloud solutions, and GDPR compliance. Supporting companies in building, modernizing, and maintaining their digital presence.",
   generator: "Next.js",
+  openGraph: {
+    title: 'Pär Nilsson',
+    description: 'Fullstack developer Pär Nilsson helps businesses with web development, website improvements, infrastructure, Azure cloud solutions, and GDPR compliance. Supporting companies in building, modernizing, and maintaining their digital presence.',
+    url: defaultUrl,
+    siteName: 'Pär Nilssons Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   keywords: [
     "web development for small businesses",
     "website modernization services",

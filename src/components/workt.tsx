@@ -4,7 +4,7 @@ import { Badge } from "./ui/badge";
 export default function Work() {
   return (
     <main className="flex flex-col gap-6">
-      <h3 className="font-medium">Work</h3>
+      <h3 className="text-xl font-medium font-serif">work so far</h3>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Norion Bank</AccordionTrigger>
