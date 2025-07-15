@@ -63,8 +63,8 @@ export default function Work() {
           <AccordionItem key={index} value={`item-${index}`}>
             <AccordionTrigger>{item.company}</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-6">
-              <h6 className="font-medium text-xs">{item.period}</h6>
-              <p>{item.description}</p>
+              <h6 className="font-medium">{item.period}</h6>
+              <p className="text-base">{item.description}</p>
               <div className="flex flex-wrap gap-2">
                 {item.tech.map((tech, i) => (
                   <Badge key={i} variant="secondary">{tech}</Badge>

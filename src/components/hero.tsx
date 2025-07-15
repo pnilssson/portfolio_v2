@@ -2,7 +2,7 @@ import Typewriter from "./ui/typewriter";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col gap-6 pt-12 md:pt-24">
+    <section className="flex flex-col gap-6">
       <div>
         <h3 className="text-xl font-medium font-serif">who am I?</h3>
       </div>

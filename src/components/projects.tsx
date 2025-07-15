@@ -6,11 +6,11 @@ const projects: Project[] = [
     description: "Hemsida för Maria Längfors, dietist och PT.",
     url: "https://www.marialangfors.se/",
   },
-  {
-    name: "fonsterputsverket.se",
-    description: "Företagssida för fönsterputsverket.",
-    url: "https://www.fonsterputsverket.se/",
-  },
+  //{
+    //name: "fonsterputsverket.se",
+    //description: "Företagssida för fönsterputsverket.",
+    //url: "https://www.fonsterputsverket.se/",
+  //},
 ];
 
 export default function Projects() {
@@ -29,10 +29,10 @@ export default function Projects() {
               className="group block gap-6 rounded-lg p-4 transition-all duration-300 hover:bg-gray-100 -mx-4"
             >
               <div className="grid items-center gap-2 grid-cols-[auto_1fr_auto]">
-                <h3 className="text-sm font-medium text-gray-800 dark:text-white">
+                <h3 className="font-medium text-gray-800 dark:text-white">
                   {project.name}
                 </h3>
-                <p className="text-xs text-gray-500 truncate">
+                <p className="font-normal text-gray-500 truncate">
                   {project.description}
                 </p>
               </div>
