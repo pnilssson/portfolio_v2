@@ -9,8 +9,8 @@ export default function Home() {
     <main className="flex flex-col gap-12 mx-auto max-w-2xl px-6 pb-12 pt-12 md:pt-24">
       <Hero />
       <Work />
-      <Qoute />
       <Projects />
+      <Qoute />
       <Footer />
     </main>
   );

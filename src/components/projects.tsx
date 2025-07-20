@@ -1,16 +1,19 @@
 import { Project } from "@/lib/types";
+import { ArrowRight } from "lucide-react";
 
 const projects: Project[] = [
   {
-    name: "marialangfors.se",
-    description: "Hemsida för Maria Längfors, dietist och PT.",
+    description: "Website for Maria Längfors, dietitian and personal trainer.",
     url: "https://www.marialangfors.se/",
   },
-  //{
-    //name: "fonsterputsverket.se",
-    //description: "Företagssida för fönsterputsverket.",
-    //url: "https://www.fonsterputsverket.se/",
-  //},
+  {
+    description: "Company website for Fönsterputsverket.",
+    url: "https://www.fonsterputsverket.se/",
+  },
+  {
+    description: "The first version of my portfolio.",
+    url: "https://portfolio-v1-rosy-alpha.vercel.app/",
+  },
 ];
 
 export default function Projects() {
@@ -26,13 +29,11 @@ export default function Projects() {
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block gap-6 rounded-lg p-4 transition-all duration-300 hover:bg-gray-100 -mx-4"
+              className="group block gap-6 rounded-lg transition-all duration-300 hover:text-gray-900"
             >
-              <div className="grid items-center gap-2 grid-cols-[auto_1fr_auto]">
-                <h3 className="font-medium text-gray-800 dark:text-white">
-                  {project.name}
-                </h3>
-                <p className="font-normal text-gray-500 truncate">
+              <div className="flex flex-row gap-3 items-center">
+                <ArrowRight size={16} />
+                <p className="font-normal truncate hover:text-gray-900">
                   {project.description}
                 </p>
               </div>
