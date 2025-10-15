@@ -51,7 +51,7 @@ export default function Work() {
       <Accordion type="single" collapsible>
         {workItems.map((item, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger>{t(`items.${item.key}.company`)}</AccordionTrigger>
+            <AccordionTrigger className="font-normal">{t(`items.${item.key}.company`)}</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-6">
               <h6 className="font-medium">{t(`items.${item.key}.period`)}</h6>
               <p className="text-base">{t(`items.${item.key}.description`)}</p>

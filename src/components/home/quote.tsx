@@ -29,7 +29,7 @@ export default function Qoute() {
       <div>
         <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
       </div>
-      <div className="flex flex-col text-gray-700 text-normal overflow-hidden ">
+      <div className="flex flex-col text-normal overflow-hidden ">
         {titles.map((model, index) => (
           <ScrambleIn
             key={index}
