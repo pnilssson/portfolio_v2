@@ -1,8 +1,8 @@
 import Footer from "@/components/footer";
-import Hero from "@/components/hero";
-import Projects from "@/components/projects";
-import Qoute from "@/components/quote";
-import Work from "@/components/workt";
+import Hero from "@/components/home/hero";
+import Projects from "@/components/home/projects";
+import Qoute from "@/components/home/quote";
+import Work from "@/components/home/workt";
 
 export default function Home() {
   return (

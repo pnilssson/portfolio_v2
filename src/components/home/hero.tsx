@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import Typewriter from "./ui/typewriter";
+import Typewriter from "@/components/ui/typewriter";
 
 export default function Hero() {
   const t = useTranslations("hero");

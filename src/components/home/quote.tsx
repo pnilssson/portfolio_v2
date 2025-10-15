@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { useTranslations } from "next-intl"
-import ScrambleIn, { ScrambleInHandle } from "./ui/scramble-in"
+import ScrambleIn, { ScrambleInHandle } from "@/components/ui/scramble-in"
 
 export default function Qoute() {
   const t = useTranslations("quote")

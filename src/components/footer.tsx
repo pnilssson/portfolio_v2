@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import { Separator } from "./ui/separator";
-import LanguageSwitcher from "./language-switcher";
+import { Separator } from "@/components/ui/separator";
+import LanguageSwitcher from "@/components/language-switcher";
 
 export default function Footer() {
   return (
