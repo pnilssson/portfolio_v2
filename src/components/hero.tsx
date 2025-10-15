@@ -1,19 +1,22 @@
+import { useTranslations } from "next-intl";
 import Typewriter from "./ui/typewriter";
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="flex flex-col gap-6">
       <div>
-        <h3 className="text-xl font-medium font-serif">who am I?</h3>
+        <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
       </div>
       <div className="whitespace-pre-wrap">
-        <span>{"I am "}</span>
+        <span>{t("prefix")}</span>
         <Typewriter
           text={[
-            "Pär Nilsson",
-            "a nerd",
-            "a training enthusiast",
-            "a friend",
+            t("typewriterTexts.name"),
+            t("typewriterTexts.nerd"),
+            t("typewriterTexts.enthusiast"),
+            t("typewriterTexts.friend"),
           ]}
           speed={90}
           className="font-medium"
@@ -22,7 +25,7 @@ export default function Hero() {
           cursorChar={"|"}
         />
       </div>
-      <p>A fullstack developer passionate about helping businesses strengthen their digital presence by building things people actually need.</p>
+      <p>{t("description")}</p>
     </section>
   );
 }

@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "heading": "vem är jag?",
+    "prefix": "Jag är ",
+    "typewriterTexts": {
+      "name": "Pär Nilsson",
+      "nerd": "en nörd",
+      "enthusiast": "en träningsentusiast",
+      "friend": "en vän"
+    },
+    "description": "En fullstack-utvecklare som brinner för att hjälpa företag att stärka sin digitala närvaro genom att bygga saker som folk faktiskt behöver."
+  },
+  "projects": {
+    "heading": "saker jag har byggt",
+    "items": {
+      "marialangfors": "Hemsida för Maria Längfors, dietist och personlig tränare.",
+      "fonsterputsverket": "Företagshemsida för Fönsterputsverket.",
+      "portfolioV1": "Den första versionen av min portfolio."
+    }
+  },
+  "quote": {
+    "heading": "ett citat jag gillar",
+    "lines": {
+      "line1": "Vilken dåre som helst kan göra något komplicerat.",
+      "line2": "Det krävs ett geni för att göra det enkelt.",
+      "author": "- Woody Guthrie"
+    }
+  },
+  "work": {
+    "heading": "arbete hittills",
+    "items": {
+      "norion": {
+        "company": "Norion Bank",
+        "period": "Jan 2024 - Nutid",
+        "description": "Underhåll av en stor portfölj av .NET-applikationer. Implementering av efterfrågad funktionalitet och regelverk, säkerställande av att de är uppdaterade versionsmässigt och följer branschens bästa praxis. Utveckling av nya .NET-applikationer, med användning av infrastruktur som kod (IaC) och Azure-tjänster för att bygga skalbara, effektiva lösningar."
+      },
+      "volvo": {
+        "company": "Volvo AB",
+        "period": "Juni 2021 - Okt 2023",
+        "description": "Bryta ut delar av ett monolitiskt system till mikrotjänster. Bygga flera nya front- och backends från grunden samt besluta om arkitekturen för dessa. Implementering och testning av integrationer mellan system. Introduktion av nya medarbetare."
+      },
+      "consid": {
+        "company": "Consid AB",
+        "period": "Jan 2021 - Okt 2023",
+        "description": "Genomförde next level academy trainee-programmet inklusive dess tre block med fokus på: konsultverksamhet, teknikspecialisering och ledarskap. Internt projekt som utvecklade ett webbaserat system för ansökan till gymnasiet."
+      },
+      "dh": {
+        "company": "DH Anticounterfeit",
+        "period": "Juni 2020 - Jan 2021",
+        "description": "Utveckling av SaaS-produkten för varumärkesskydd. Multinationellt team med människor från hela världen. Det dagliga arbetet byggde på ett agilt arbetssätt och scrum-metodik."
+      }
+    }
+  }
+}

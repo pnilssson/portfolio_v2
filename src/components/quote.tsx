@@ -1,13 +1,16 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import { useTranslations } from "next-intl"
 import ScrambleIn, { ScrambleInHandle } from "./ui/scramble-in"
 
 export default function Qoute() {
+  const t = useTranslations("quote")
+  
   const titles = [
-    "Any fool can make something complicated.",
-    "It takes a genius to make it simple.",
-    "- Woody Guthrie",
+    t("lines.line1"),
+    t("lines.line2"),
+    t("lines.author"),
   ]
 
   const scrambleRefs = useRef<(ScrambleInHandle | null)[]>([])
@@ -19,12 +22,12 @@ export default function Qoute() {
         scrambleRefs.current[index]?.start()
       }, delay)
     })
-  }, [])
+  }, [titles])
 
   return (
     <section className="flex flex-col gap-6">
       <div>
-        <h3 className="text-xl font-medium font-serif">a qoute I like</h3>
+        <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
       </div>
       <div className="flex flex-col text-gray-700 text-normal overflow-hidden ">
         {titles.map((model, index) => (

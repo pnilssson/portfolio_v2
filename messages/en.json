@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "heading": "who am I?",
+    "prefix": "I am ",
+    "typewriterTexts": {
+      "name": "Pär Nilsson",
+      "nerd": "a nerd",
+      "enthusiast": "a training enthusiast",
+      "friend": "a friend"
+    },
+    "description": "A fullstack developer passionate about helping businesses strengthen their digital presence by building things people actually need."
+  },
+  "projects": {
+    "heading": "things I have built",
+    "items": {
+      "marialangfors": "Website for Maria Längfors, dietitian and personal trainer.",
+      "fonsterputsverket": "Company website for Fönsterputsverket.",
+      "portfolioV1": "The first version of my portfolio."
+    }
+  },
+  "quote": {
+    "heading": "a quote I like",
+    "lines": {
+      "line1": "Any fool can make something complicated.",
+      "line2": "It takes a genius to make it simple.",
+      "author": "- Woody Guthrie"
+    }
+  },
+  "work": {
+    "heading": "work so far",
+    "items": {
+      "norion": {
+        "company": "Norion Bank",
+        "period": "Jan 2024 - Present",
+        "description": "Maintenance of a large portfolio of .NET applications. Implementing requested functionality and regulations, ensuring they are up to date version wise and adhere to industry best practices. Development of new .NET applications, leveraging infrastructure as code (IaC) and Azure services to build scalable, efficient solutions."
+      },
+      "volvo": {
+        "company": "Volvo AB",
+        "period": "June 2021 - Oct 2023",
+        "description": "Breaking out parts of a monolithic system into microservices. Building multiple new front and back ends from the ground up as well as deciding on the architecture of these. Implementing and testing integrations between systems. Onboarding of new employees."
+      },
+      "consid": {
+        "company": "Consid AB",
+        "period": "Jan 2021 - Oct 2023",
+        "description": "Completed the next level academy trainee program including its three blocks focusing on: consultancy, technology specialization and leadership. In-house project developing a web-based system used when applying to upper secondary school."
+      },
+      "dh": {
+        "company": "DH Anticounterfeit",
+        "period": "June 2020 - Jan 2021",
+        "description": "Development of the brand protection SaaS product. Multi-national team with people working from around the world. Daily work was built on an agile way of working and scrum methodologies."
+      }
+    }
+  }
+}

@@ -1,29 +1,22 @@
-import { Project } from "@/lib/types";
+import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 
-const projects: Project[] = [
-  {
-    description: "Website for Maria Längfors, dietitian and personal trainer.",
-    url: "https://www.marialangfors.se/",
-  },
-  {
-    description: "Company website for Fönsterputsverket.",
-    url: "https://www.fonsterputsverket.se/",
-  },
-  {
-    description: "The first version of my portfolio.",
-    url: "https://portfolio-v1-rosy-alpha.vercel.app/",
-  },
+const projectUrls = [
+  { key: "marialangfors", url: "https://www.marialangfors.se/" },
+  { key: "fonsterputsverket", url: "https://www.fonsterputsverket.se/" },
+  { key: "portfolioV1", url: "https://portfolio-v1-rosy-alpha.vercel.app/" },
 ];
 
 export default function Projects() {
+  const t = useTranslations("projects");
+
   return (
     <section className="flex flex-col gap-6">
       <div>
-        <h3 className="text-xl font-medium font-serif">things I have built</h3>
+        <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
       </div>
       <ul className="space-y-4">
-        {projects.map((project, index) => (
+        {projectUrls.map((project, index) => (
           <li key={index}>
             <a
               href={project.url}
@@ -34,7 +27,7 @@ export default function Projects() {
               <div className="flex flex-row gap-3 items-center">
                 <ArrowRight size={16} />
                 <p className="font-normal truncate hover:text-gray-900">
-                  {project.description}
+                  {t(`items.${project.key}`)}
                 </p>
               </div>
             </a>
