@@ -1,11 +1,18 @@
 import { TrendingUp, Sparkles, Plug, Circle, Lightbulb } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Addons() {
   const t = useTranslations('offer.addons');
   
   const services = [
     {
+      id: "expansion",
       category: t('categories.expansion.name'),
       icon: TrendingUp,
       items: [
@@ -16,6 +23,7 @@ export default function Addons() {
       ],
     },
     {
+      id: "automation",
       category: t('categories.automation.name'),
       icon: Sparkles,
       items: [
@@ -28,6 +36,7 @@ export default function Addons() {
       ],
     },
     {
+      id: "integrations",
       category: t('categories.integrations.name'),
       icon: Plug,
       items: [
@@ -37,6 +46,7 @@ export default function Addons() {
       ],
     },
     {
+      id: "consulting",
       category: t('categories.consulting.name'),
       icon: Lightbulb,
       items: [
@@ -56,30 +66,31 @@ export default function Addons() {
         <p className="mt-4">{t('intro')}</p>
       </div>
 
-      <div className="flex flex-col gap-8">
-        {services.map((service, index) => {
+      <Accordion type="single" collapsible className="w-full">
+        {services.map((service) => {
           const Icon = service.icon;
           return (
-            <div 
-              key={index} 
-              className="group flex flex-col gap-3 transition-colors"
-            >
-              <div className="flex items-center gap-3">
-                <Icon className="size-4" aria-hidden="true" />
-                <h4 className="font-medium text-base">{service.category}</h4>
-              </div>
-              <ul className="space-y-4 text-sm pl-8">
-                {service.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start gap-2.5">
-                    <Circle className="size-1 fill-current flex-shrink-0 mt-3" aria-hidden="true" />
-                    <span className="text-base">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <AccordionItem key={service.id} value={service.id}>
+              <AccordionTrigger className="hover:no-underline">
+                <div className="flex items-center gap-3">
+                  <Icon className="size-4" aria-hidden="true" />
+                  <span className="font-medium text-base">{service.category}</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <ul className="space-y-3 text-base pl-7 pt-2">
+                  {service.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-start gap-2.5">
+                      <Circle className="size-1 fill-current flex-shrink-0 mt-2.5" aria-hidden="true" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
           );
         })}
-      </div>
+      </Accordion>
     </section>
   );
 }
