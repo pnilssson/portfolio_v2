@@ -1,4 +1,8 @@
 {
+  "navbar": {
+    "home": "jag",
+    "services": "tjänster"
+  },
   "hero": {
     "heading": "vem är jag?",
     "prefix": "Jag är ",
@@ -48,6 +52,146 @@
         "company": "DH Anticounterfeit",
         "period": "Juni 2020 - Jan 2021",
         "description": "Utveckling av SaaS-produkten för varumärkesskydd. Multinationellt team med människor från hela världen. Det dagliga arbetet byggde på ett agilt arbetssätt och scrum-metodik."
+      }
+    }
+  },
+  "offer": {
+    "challenge": {
+      "heading": "utmaningen",
+      "paragraph1": "En hemsida är ofta det första intrycket en kund får av ert företag. Många företag har i dag en sida som inte längre speglar verksamheten, saknar viktiga funktioner eller inte fungerar bra på mobiler.",
+      "paragraph2": "Det kan göra att potentiella kunder går vidare till konkurrenter. En snabb, professionell och modern webbplats gör skillnaden mellan att bara synas och att faktiskt bli vald.",
+      "paragraph3": "Oavsett om ni saknar en hemsida eller vill modernisera en befintlig hjälper jag er att skapa en lösning som stärker ert varumärke och förenklar för era kunder."
+    },
+    "packages": {
+      "heading": "paket",
+      "intro": "Välj paket utifrån era behov just nu. Samtliga paket levereras med samma höga standard och inkluderar alltid följande funktioner.",
+      "commonFeatures": {
+        "modern": "Modern och användarvänlig design",
+        "mobile": "Mobilanpassad för alla enheter",
+        "gdpr": "GDPR-policy och cookie-banner",
+        "hosting": "Hosting och drift inkluderad",
+        "ssl": "SSL-certifikat (säker https)",
+        "contact": "Kontaktformulär"
+      },
+      "premium": {
+        "name": "Premiumwebb",
+        "price": "19 999 kr",
+        "description": "För företag som vill ha en komplett och skalbar lösning.",
+        "features": {
+          "everything": "Allt i Tillväxtwebb",
+          "pages": "Upp till 8 sidor",
+          "aiSeo": "AI SEO-optimering (smart analys av nyckelord och innehåll)",
+          "analytics": "Valfri integration för avancerad statistik och analys samt rapportering",
+          "multilang": "Anpassad flerspråkighet (1 ytterligare språk inkluderat)",
+          "chatbot": "Chatbot inkluderat",
+          "advancedForm": "Avancerat kontaktformulär"
+        },
+        "suitedFor": "Passar: Företag som vill ha en flexibel webbplats som kan växa med verksamheten."
+      },
+      "growth": {
+        "name": "Tillväxtwebb",
+        "price": "13 999 kr",
+        "description": "För företag som vill synas bättre och ge kunderna mer information.",
+        "features": {
+          "pages": "Upp till 4 sidor",
+          "seo": "Utökad SEO-optimering",
+          "analytics": "Grundläggande statistik och analysrapportering",
+          "cms": "Innehållshanteringssystem (CMS) för enkel uppdatering",
+          "blog": "Nyhetsflöde / bloggfunktion",
+          "extendedForm": "Utökat kontaktformulär"
+        },
+        "suitedFor": "Passar: Etablerade företag som vill växa digitalt och förbättra sin synlighet."
+      },
+      "starter": {
+        "name": "Startwebb",
+        "price": "7 999 kr",
+        "description": "För företag som vill ha en enkel men professionell närvaro online.",
+        "features": {
+          "landing": "En modern, mobilanpassad och användarvänlig landningssida",
+          "seo": "Grundläggande SEO-optimering",
+          "form": "Grundläggande kontaktformulär"
+        },
+        "suitedFor": "Passar: Mindre företag eller enskilda verksamheter som vill komma igång snabbt."
+      }
+    },
+    "addons": {
+      "heading": "tillägg",
+      "intro": "Utöka efter behov och skräddarsy er lösning med ytterligare tillägg.",
+      "categories": {
+        "expansion": {
+          "name": "Utbyggnad, underhåll och synlighet",
+          "items": {
+            "pages": "Ytterliggare sidor utöver de som ingår",
+            "multilang": "Anpassad flerspråkighet (svenska, engelska, etc.)",
+            "seo": "SEO-analys med löpande förbättringar (avtal månadsvis eller kvartalsvis)",
+            "analytics": "Analytics-rapportering"
+          }
+        },
+        "automation": {
+          "name": "Automation och AI",
+          "items": {
+            "chatbot": "AI-chatbot",
+            "quotes": "Automatiserade offertflöden",
+            "support": "Automatisering av kundsupport",
+            "email": "Automatisering av e-post",
+            "aiText": "Integration av AI-textförslag (blogg, nyheter, produktbeskrivningar)",
+            "custom": "Skräddarsydda AI-lösningar för interna processer"
+          }
+        },
+        "integrations": {
+          "name": "Integrationer och teknik",
+          "items": {
+            "booking": "Integration mot bokningssystem, CRM eller e-postplattform",
+            "payment": "Integration mot betalningslösningar (Stripe, Klarna, Swish etc.)",
+            "api": "API-integrationer mellan olika system (t.ex. offertsystem, logistik eller interna appar)"
+          }
+        },
+        "consulting": {
+          "name": "Konsultation och speciallösningar",
+          "items": {
+            "strategy": "Konsultation kring digital strategi, systemarkitektur eller molninfrastruktur",
+            "domain": "Hjälp med domänhantering och DNS",
+            "special": "Särskilda önskemål eller speciallösningar diskuteras alltid"
+          }
+        }
+      }
+    },
+    "tools": {
+      "heading": "verktyg",
+      "description": "Jag arbetar med moderna och välkända teknologier som är branschstandard. Det garanterar en stabil och framtidssäker lösning som är enkel att underhålla och vidareutveckla."
+    },
+    "process": {
+      "heading": "process",
+      "intro": "Jag arbetar i nära dialog med varje kund för att projektet ska bli smidigt, transparent och effektivt. Ni vet alltid vad som händer och när.",
+      "steps": {
+        "analysis": {
+          "title": "Behovsanalys och planering",
+          "description": "Vi går igenom vilken typ av hemsida ni är ute efter och vilka av min tjänster som passar er. Vi går även igenom era mål, målgrupp och innehåll."
+        },
+        "design": {
+          "title": "Design och demo",
+          "description": "Ni får en klickbar förhandsvisning av en enklare version av er framtida hemsida så att både ni och jag kan känna oss trygga inför nästa steg."
+        },
+        "payment1": {
+          "title": "Första betalningen",
+          "description": "50 procent av det totala priset betalas vid start."
+        },
+        "development": {
+          "title": "Utveckling och testning",
+          "description": "Jag bygger er hemsida enligt era önskemål och testar prestanda samt funktionalitet."
+        },
+        "feedback": {
+          "title": "Demo, feedback och önskemål",
+          "description": "Ni får ytterliggare en demo med färdig design och får möjlighet att ge feedback samt önskemål."
+        },
+        "payment2": {
+          "title": "Andra betalningen",
+          "description": "När ni är nöjda med resultatet betalas resterande 50 procent."
+        },
+        "launch": {
+          "title": "Lansering och support",
+          "description": "Sidan publiceras och jag finns tillgänglig för frågor, uppföljning och framtida sammarbeten."
+        }
       }
     }
   }

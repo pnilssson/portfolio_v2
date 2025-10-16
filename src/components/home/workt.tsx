@@ -46,7 +46,7 @@ export default function Work() {
   const t = useTranslations("work");
 
   return (
-    <main className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6">
       <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
       <Accordion type="single" collapsible>
         {workItems.map((item, index) => (
@@ -64,6 +64,6 @@ export default function Work() {
           </AccordionItem>
         ))}
       </Accordion>
-    </main>
+    </section>
   );
 }

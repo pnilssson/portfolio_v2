@@ -1,155 +1,154 @@
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Check } from 'lucide-react'
+import { useTranslations } from 'next-intl';
 
 export default function Packages() {
+    const t = useTranslations('offer.packages');
+    
+    const commonFeatures = [
+        t('commonFeatures.modern'),
+        t('commonFeatures.mobile'),
+        t('commonFeatures.gdpr'),
+        t('commonFeatures.hosting'),
+        t('commonFeatures.ssl'),
+        t('commonFeatures.contact'),
+    ];
+    
     return (
         <section className="flex flex-col gap-6">
             <div className="flex flex-col gap-6">
                 <h3 className="text-xl font-medium font-serif">
-                    mina paket
+                    {t('heading')}
                 </h3>
                 
                 {/* Gemensamma funktioner */}
-                <Card className="shadow-none">
-                    <CardHeader>
-                        <CardTitle className="font-normal text-xl font-serif">Inkluderat i samtliga paket</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                            {[
-                                'Modern och användarvänlig design',
-                                'Mobilanpassad för alla enheter',
-                                'GDPR-policy och cookie-banner',
-                                'Hosting och drift inkluderad',
-                                'SSL-certifikat (säker https)',
-                                'Kontaktformulär'
-                            ].map((item, index) => (
-                                <li
-                                    key={index}
-                                    className="flex items-center gap-2">
-                                    <Check className="size-3" />
-                                    <span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </CardContent>
-                </Card>
+                <div>
+                    <p className="mb-4">{t('intro')}</p>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {commonFeatures.map((item, index) => (
+                            <li
+                                key={index}
+                                className="flex items-center gap-2">
+                                <Check className="size-3" />
+                                <span>{item}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
 
                 <div className="grid gap-6">
-                    {/* Premiumwebb - 19 999 kr */}
+                    {/* Premium Package */}
                     <Card className="flex flex-col shadow-none">
                         <CardHeader>
-                            <CardTitle className="font-normal text-xl font-serif flex items-center gap-2">
-                                Premiumwebb
+                            <CardTitle className="font-base font-medium text-xl flex items-center gap-2">
+                                {t('premium.name')}
                             </CardTitle>
-                            <span className="my-3 block text-2xl font-semibold">19 999 kr</span>
+                            <span className="my-3 block text-2xl font-semibold">{t('premium.price')}</span>
                             <CardDescription className="text-sm">
-                                För företag som vill ha en komplett och skalbar lösning.
+                                {t('premium.description')}
                             </CardDescription>
                         </CardHeader>
 
                         <CardContent className="space-y-4">
                             <hr className="border-dashed" />
 
-                            <ul className="list-outside space-y-3 text-sm">
+                            <ul className="list-outside space-y-3">
                                 {[
-                                    'Allt i Tillväxtwebb',
-                                    'Upp till 8 sidor',
-                                    'AI SEO-optimering (smart analys av nyckelord och innehåll)',
-                                    'Valfri integration för avancerad statistik och analys samt rapportering',
-                                    'Anpassad flerspråkighet (1 ytterligare språk inkluderat)',
-                                    'Chatbot inkluderat',
-                                    'Avancerat kontaktformulär'
+                                    t('premium.features.everything'),
+                                    t('premium.features.pages'),
+                                    t('premium.features.aiSeo'),
+                                    t('premium.features.analytics'),
+                                    t('premium.features.multilang'),
+                                    t('premium.features.chatbot'),
+                                    t('premium.features.advancedForm'),
                                 ].map((item, index) => (
                                     <li
                                         key={index}
                                         className="flex items-center gap-2">
-                                        <Check className="size-3" />
+                                        <Check className="size-3 flex-shrink-0" />
                                         {item}
                                     </li>
                                 ))}
                             </ul>
 
-                            <p className="text-xs text-muted-foreground pt-2">
-                                Passar: Företag som vill ha en flexibel webbplats som kan växa med verksamheten.
+                            <p className="text-sm text-muted-foreground pt-2">
+                                {t('premium.suitedFor')}
                             </p>
                         </CardContent>
                     </Card>
 
-                    {/* Tillväxtwebb - 13 999 kr */}
+                    {/* Growth Package */}
                     <Card className="flex flex-col shadow-none">
                         <CardHeader>
-                            <CardTitle className="font-normal text-xl font-serif flex items-center gap-2">
-                                Tillväxtwebb
+                            <CardTitle className="font-base font-medium text-xl flex items-center gap-2">
+                                {t('growth.name')}
                             </CardTitle>
-                            <span className="my-3 block text-2xl font-semibold">13 999 kr</span>
+                            <span className="my-3 block text-2xl font-semibold">{t('growth.price')}</span>
                             <CardDescription className="text-sm">
-                                För företag som vill synas bättre och ge kunderna mer information.
+                                {t('growth.description')}
                             </CardDescription>
                         </CardHeader>
 
                         <CardContent className="space-y-4">
                             <hr className="border-dashed" />
 
-                            <ul className="list-outside space-y-3 text-sm">
+                            <ul className="list-outside space-y-3">
                                 {[
-                                    'Upp till 4 sidor',
-                                    'Utökad SEO-optimering',
-                                    'Grundläggande statistik och analysrapportering',
-                                    'Innehållshanteringssystem (CMS) för enkel uppdatering',
-                                    'Nyhetsflöde / bloggfunktion',
-                                    'Utökat kontaktformulär'
+                                    t('growth.features.pages'),
+                                    t('growth.features.seo'),
+                                    t('growth.features.analytics'),
+                                    t('growth.features.cms'),
+                                    t('growth.features.blog'),
+                                    t('growth.features.extendedForm'),
                                 ].map((item, index) => (
                                     <li
                                         key={index}
                                         className="flex items-center gap-2">
-                                        <Check className="size-3" />
+                                        <Check className="size-3 flex-shrink-0" />
                                         {item}
                                     </li>
                                 ))}
                             </ul>
 
-                            <p className="text-xs text-muted-foreground pt-2">
-                                Passar: Etablerade företag som vill växa digitalt och förbättra sin synlighet.
+                            <p className="text-sm text-muted-foreground pt-2">
+                                {t('growth.suitedFor')}
                             </p>
                         </CardContent>
                     </Card>
 
-                    {/* Startwebb - 7 999 kr */}
+                    {/* Starter Package */}
                     <Card className="flex flex-col shadow-none">
                         <CardHeader>
-                            <CardTitle className="font-normal text-xl font-serif flex items-center gap-2">
-                                Startwebb
+                            <CardTitle className="font-base font-medium text-xl flex items-center gap-2">
+                                {t('starter.name')}
                             </CardTitle>
-                            <span className="my-3 block text-2xl font-semibold">7 999 kr</span>
+                            <span className="my-3 block text-2xl font-semibold">{t('starter.price')}</span>
                             <CardDescription className="text-sm">
-                                För företag som vill ha en enkel men professionell närvaro online.
+                                {t('starter.description')}
                             </CardDescription>
                         </CardHeader>
 
                         <CardContent className="space-y-4">
                             <hr className="border-dashed" />
 
-                            <ul className="list-outside space-y-3 text-sm">
+                            <ul className="list-outside space-y-3">
                                 {[
-                                    'En modern, mobilanpassad och användarvänlig landningssida',
-                                    'Grundläggande SEO-optimering',
-                                    'Grundläggande kontaktformulär'
+                                    t('starter.features.landing'),
+                                    t('starter.features.seo'),
+                                    t('starter.features.form'),
                                 ].map((item, index) => (
                                     <li
                                         key={index}
                                         className="flex items-center gap-2">
-                                        <Check className="size-3" />
+                                        <Check className="size-3 flex-shrink-0" />
                                         {item}
                                     </li>
                                 ))}
                             </ul>
 
-                            <p className="text-xs text-muted-foreground pt-2">
-                                Passar: Mindre företag eller enskilda verksamheter som vill komma igång snabbt.
+                            <p className="text-sm text-muted-foreground pt-2">
+                                {t('starter.suitedFor')}
                             </p>
                         </CardContent>
                     </Card>

@@ -1,17 +1,19 @@
-import Footer from "@/components/footer";
 import Challenge from "@/components/offer/challenge";
 import Packages from "@/components/offer/packages";
-import AdditionalServices from "@/components/offer/additional-services";
+import Addons from "@/components/offer/addons";
 import Process from "@/components/offer/process";
+import Testimonials from "@/components/offer/testimonials";
+import Tools from "@/components/offer/tools";
 
 export default function Offer() {
   return (
-    <main className="flex flex-col gap-12 mx-auto max-w-2xl px-6 pb-12 pt-12 md:pt-24">
+    <main className="flex flex-col gap-12 mx-auto max-w-2xl px-6">
       <Challenge />
+      {/* <Testimonials /> */}
       <Packages />
-      <AdditionalServices />
+      <Addons />
+      <Tools />
       <Process />
-      <Footer />
     </main>
   );
 }

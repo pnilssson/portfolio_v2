@@ -1,4 +1,8 @@
 {
+  "navbar": {
+    "home": "me",
+    "services": "services"
+  },
   "hero": {
     "heading": "who am I?",
     "prefix": "I am ",
@@ -48,6 +52,146 @@
         "company": "DH Anticounterfeit",
         "period": "June 2020 - Jan 2021",
         "description": "Development of the brand protection SaaS product. Multi-national team with people working from around the world. Daily work was built on an agile way of working and scrum methodologies."
+      }
+    }
+  },
+  "offer": {
+    "challenge": {
+      "heading": "the challenge",
+      "paragraph1": "A website is often the first impression a customer gets of your company. Many companies today have a site that no longer reflects their business, lacks important features, or doesn't work well on mobile devices.",
+      "paragraph2": "This can cause potential customers to move on to competitors. A fast, professional, and modern website makes the difference between just being visible and actually being chosen.",
+      "paragraph3": "Whether you lack a website or want to modernize an existing one, I help you create a solution that strengthens your brand and simplifies for your customers."
+    },
+    "packages": {
+      "heading": "packages",
+      "intro": "Choose a package based on your current needs. All packages are delivered with the same high standard and always include the following features.",
+      "commonFeatures": {
+        "modern": "Modern and user-friendly design",
+        "mobile": "Mobile-optimized for all devices",
+        "gdpr": "GDPR policy and cookie banner",
+        "hosting": "Hosting and operations included",
+        "ssl": "SSL certificate (secure https)",
+        "contact": "Contact form"
+      },
+      "premium": {
+        "name": "Premium Web",
+        "price": "€1,899",
+        "description": "For companies that want a complete and scalable solution.",
+        "features": {
+          "everything": "Everything in Growth Web",
+          "pages": "Up to 8 pages",
+          "aiSeo": "AI SEO optimization (smart analysis of keywords and content)",
+          "analytics": "Optional integration for advanced statistics and analysis with reporting",
+          "multilang": "Custom multilingual support (1 additional language included)",
+          "chatbot": "Chatbot included",
+          "advancedForm": "Advanced contact form"
+        },
+        "suitedFor": "Suited for: Companies that want a flexible website that can grow with their business."
+      },
+      "growth": {
+        "name": "Growth Web",
+        "price": "€1,299",
+        "description": "For companies that want to be more visible and provide customers with more information.",
+        "features": {
+          "pages": "Up to 4 pages",
+          "seo": "Extended SEO optimization",
+          "analytics": "Basic statistics and analytics reporting",
+          "cms": "Content management system (CMS) for easy updates",
+          "blog": "News feed / blog function",
+          "extendedForm": "Extended contact form"
+        },
+        "suitedFor": "Suited for: Established companies that want to grow digitally and improve their visibility."
+      },
+      "starter": {
+        "name": "Starter Web",
+        "price": "€799",
+        "description": "For companies that want a simple but professional online presence.",
+        "features": {
+          "landing": "A modern, mobile-optimized and user-friendly landing page",
+          "seo": "Basic SEO optimization",
+          "form": "Basic contact form"
+        },
+        "suitedFor": "Suited for: Smaller companies or individual businesses that want to get started quickly."
+      }
+    },
+    "addons": {
+      "heading": "add-ons",
+      "intro": "Expand as needed and customize your solution with additional add-ons.",
+      "categories": {
+        "expansion": {
+          "name": "Expansion, maintenance and visibility",
+          "items": {
+            "pages": "Additional pages beyond those included",
+            "multilang": "Custom multilingual support (Swedish, English, etc.)",
+            "seo": "SEO analysis with ongoing improvements (monthly or quarterly contracts)",
+            "analytics": "Analytics reporting"
+          }
+        },
+        "automation": {
+          "name": "Automation and AI",
+          "items": {
+            "chatbot": "AI chatbot",
+            "quotes": "Automated quote workflows",
+            "support": "Customer support automation",
+            "email": "Email automation",
+            "aiText": "Integration of AI text suggestions (blog, news, product descriptions)",
+            "custom": "Custom AI solutions for internal processes"
+          }
+        },
+        "integrations": {
+          "name": "Integrations and technology",
+          "items": {
+            "booking": "Integration with booking systems, CRM or email platforms",
+            "payment": "Integration with payment solutions (Stripe, Klarna, Swish, etc.)",
+            "api": "API integrations between various systems (e.g. quote systems, logistics or internal apps)"
+          }
+        },
+        "consulting": {
+          "name": "Consulting and custom solutions",
+          "items": {
+            "strategy": "Consultation on digital strategy, system architecture or cloud infrastructure",
+            "domain": "Help with domain management and DNS",
+            "special": "Special requests or custom solutions are always discussed"
+          }
+        }
+      }
+    },
+    "tools": {
+      "heading": "tools",
+      "description": "I work with modern and well-known technologies that are industry standard. This guarantees a stable and future-proof solution that is easy to maintain and develop further."
+    },
+    "process": {
+      "heading": "process",
+      "intro": "I work in close dialogue with each customer to make the project smooth, transparent and efficient. You always know what's happening and when.",
+      "steps": {
+        "analysis": {
+          "title": "Needs analysis and planning",
+          "description": "We review what type of website you're looking for and which of my services suit you. We also go through your goals, target audience and content."
+        },
+        "design": {
+          "title": "Design and demo",
+          "description": "You get a clickable preview of a simpler version of your future website so that both you and I can feel confident before the next step."
+        },
+        "payment1": {
+          "title": "First payment",
+          "description": "50 percent of the total price is paid at start."
+        },
+        "development": {
+          "title": "Development and testing",
+          "description": "I build your website according to your wishes and test performance and functionality."
+        },
+        "feedback": {
+          "title": "Demo, feedback and requests",
+          "description": "You get another demo with the finished design and have the opportunity to provide feedback and requests."
+        },
+        "payment2": {
+          "title": "Second payment",
+          "description": "When you're satisfied with the result, the remaining 50 percent is paid."
+        },
+        "launch": {
+          "title": "Launch and support",
+          "description": "The site is published and I'm available for questions, follow-up and future collaborations."
+        }
       }
     }
   }
