@@ -42,9 +42,9 @@ export default function Process() {
   ];
   
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6" aria-labelledby="process-heading">
       <div>
-        <h3 className="text-xl font-medium font-serif">{t('heading')}</h3>
+        <h2 id="process-heading" className="text-xl font-medium font-serif">{t('heading')}</h2>
         <p className="mt-4">{t('intro')}</p>
       </div>
 

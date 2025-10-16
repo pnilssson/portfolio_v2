@@ -1,7 +1,23 @@
 {
   "navbar": {
     "home": "me",
-    "services": "services"
+    "services": "services",
+    "ariaHome": "Navigate to home page",
+    "ariaServices": "Navigate to services page",
+    "ariaLabel": "Main navigation"
+  },
+  "footer": {
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "ariaGithub": "Visit my GitHub profile",
+    "ariaLinkedin": "Visit my LinkedIn profile",
+    "ariaEmail": "Send me an email",
+    "ariaSocialMedia": "Social media links"
+  },
+  "languageSwitcher": {
+    "ariaSwedish": "Switch to Swedish",
+    "ariaEnglish": "Switch to English",
+    "ariaLabel": "Language switcher"
   },
   "hero": {
     "heading": "who am I?",

@@ -46,18 +46,18 @@ export default function Work() {
   const t = useTranslations("work");
 
   return (
-    <section className="flex flex-col gap-6">
-      <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
+    <section className="flex flex-col gap-6" aria-labelledby="work-heading">
+      <h2 id="work-heading" className="text-xl font-medium font-serif">{t("heading")}</h2>
       <Accordion type="single" collapsible>
         {workItems.map((item, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
             <AccordionTrigger className="font-normal">{t(`items.${item.key}.company`)}</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-6">
-              <h6 className="font-medium">{t(`items.${item.key}.period`)}</h6>
+              <h3 className="font-medium">{t(`items.${item.key}.period`)}</h3>
               <p className="text-base">{t(`items.${item.key}.description`)}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2" role="list" aria-label="Technologies">
                 {item.tech.map((tech, i) => (
-                  <Badge key={i} variant="secondary">{tech}</Badge>
+                  <Badge key={i} variant="secondary" role="listitem">{tech}</Badge>
                 ))}
               </div>
             </AccordionContent>

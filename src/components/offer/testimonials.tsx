@@ -50,10 +50,10 @@ const testimonialChunks = chunkArray(
 
 export default function WallOfLoveSection() {
   return (
-    <section>
+    <section aria-labelledby="testimonials-heading">
         <div className="">
           <div>
-            <h3 className="text-xl font-medium font-serif">vad andra säger</h3>
+            <h3 id="testimonials-heading" className="text-xl font-medium font-serif">vad andra säger</h3>
           </div> 
           <div className="grid [--color-card:var(--color-muted)] dark:[--color-muted:var(--color-zinc-900)]">
             {testimonialChunks.map((chunk, chunkIndex) => (
@@ -66,17 +66,17 @@ export default function WallOfLoveSection() {
                     <CardContent className="grid grid-cols-[auto_1fr] gap-3 px-0">
                       <Avatar className="size-9">
                         <AvatarImage
-                          alt={name}
+                          alt={`${name}, ${role}`}
                           src={image}
                           loading="lazy"
                           width="120"
                           height="120"
                         />
-                        <AvatarFallback>ST</AvatarFallback>
+                        <AvatarFallback>{name.substring(0, 2).toUpperCase()}</AvatarFallback>
                       </Avatar>
 
                       <div>
-                        <h3 className="font-medium">{name}</h3>
+                        <h4 className="font-medium">{name}</h4>
 
                         <span className="text-muted-foreground block text-sm tracking-wide">
                           {role}

@@ -5,11 +5,11 @@ export default function Tools() {
     const t = useTranslations('offer.tools');
     
     return (
-        <section className="flex flex-col gap-6">
+        <section className="flex flex-col gap-6" aria-labelledby="tools-heading">
             <div className="flex flex-col gap-6">
-                <h3 className="text-xl font-medium font-serif">
+                <h2 id="tools-heading" className="text-xl font-medium font-serif">
                     {t('heading')}
-                </h3>
+                </h2>
                 <p>{t('description')}</p>
             </div>
             

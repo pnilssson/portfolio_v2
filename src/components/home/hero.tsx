@@ -5,9 +5,9 @@ export default function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6" aria-labelledby="hero-heading">
       <div>
-        <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
+        <h1 id="hero-heading" className="text-xl font-medium font-serif">{t("heading")}</h1>
       </div>
       <div className="whitespace-pre-wrap">
         <span>{t("prefix")}</span>

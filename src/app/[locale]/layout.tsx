@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { Analytics } from '@vercel/analytics/next';
+import Script from "next/script";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
@@ -74,13 +75,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
@@ -89,6 +94,10 @@ export default function RootLayout({
           {children}
           <Footer />
           <Analytics />
+          <Script 
+            src="https://embeds.iubenda.com/widgets/bcad60e2-fc63-4b1c-a4dd-270de198366e.js" 
+            strategy="afterInteractive"
+          />
         </NextIntlClientProvider>
       </body>
     </html>

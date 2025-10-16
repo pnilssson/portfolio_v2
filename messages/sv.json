@@ -1,7 +1,23 @@
 {
   "navbar": {
     "home": "jag",
-    "services": "tjänster"
+    "services": "tjänster",
+    "ariaHome": "Navigera till startsidan",
+    "ariaServices": "Navigera till tjänster",
+    "ariaLabel": "Huvudnavigering"
+  },
+  "footer": {
+    "privacyPolicy": "Integritetspolicy",
+    "cookiePolicy": "Cookiepolicy",
+    "ariaGithub": "Besök min GitHub-profil",
+    "ariaLinkedin": "Besök min LinkedIn-profil",
+    "ariaEmail": "Skicka ett e-postmeddelande till mig",
+    "ariaSocialMedia": "Länkar till sociala medier"
+  },
+  "languageSwitcher": {
+    "ariaSwedish": "Byt till svenska",
+    "ariaEnglish": "Byt till engelska",
+    "ariaLabel": "Språkväxlare"
   },
   "hero": {
     "heading": "vem är jag?",

@@ -15,11 +15,11 @@ export default function Packages() {
     ];
     
     return (
-        <section className="flex flex-col gap-6">
+        <section className="flex flex-col gap-6" aria-labelledby="packages-heading">
             <div className="flex flex-col gap-6">
-                <h3 className="text-xl font-medium font-serif">
+                <h2 id="packages-heading" className="text-xl font-medium font-serif">
                     {t('heading')}
-                </h3>
+                </h2>
                 
                 {/* Gemensamma funktioner */}
                 <div>
@@ -29,7 +29,7 @@ export default function Packages() {
                             <li
                                 key={index}
                                 className="flex items-center gap-2">
-                                <Check className="size-3" />
+                                <Check className="size-3" aria-hidden="true" />
                                 <span>{item}</span>
                             </li>
                         ))}
@@ -66,7 +66,7 @@ export default function Packages() {
                                     <li
                                         key={index}
                                         className="flex items-center gap-2">
-                                        <Check className="size-3 flex-shrink-0" />
+                                        <Check className="size-3 flex-shrink-0" aria-hidden="true" />
                                         {item}
                                     </li>
                                 ))}
@@ -105,7 +105,7 @@ export default function Packages() {
                                     <li
                                         key={index}
                                         className="flex items-center gap-2">
-                                        <Check className="size-3 flex-shrink-0" />
+                                        <Check className="size-3 flex-shrink-0" aria-hidden="true" />
                                         {item}
                                     </li>
                                 ))}
@@ -141,7 +141,7 @@ export default function Packages() {
                                     <li
                                         key={index}
                                         className="flex items-center gap-2">
-                                        <Check className="size-3 flex-shrink-0" />
+                                        <Check className="size-3 flex-shrink-0" aria-hidden="true" />
                                         {item}
                                     </li>
                                 ))}

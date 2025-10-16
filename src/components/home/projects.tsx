@@ -11,9 +11,9 @@ export default function Projects() {
   const t = useTranslations("projects");
 
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6" aria-labelledby="projects-heading">
       <div>
-        <h3 className="text-xl font-medium font-serif">{t("heading")}</h3>
+        <h2 id="projects-heading" className="text-xl font-medium font-serif">{t("heading")}</h2>
       </div>
       <ul className="space-y-4">
         {projectUrls.map((project, index) => (
@@ -23,9 +23,10 @@ export default function Projects() {
               target="_blank"
               rel="noopener noreferrer"
               className="group block gap-6 rounded-lg transition-all duration-300 hover:text-gray-900"
+              aria-label={t(`items.${project.key}`)}
             >
               <div className="flex flex-row gap-3 items-center">
-                <ArrowRight size={16} />
+                <ArrowRight size={16} aria-hidden="true" />
                 <p className="font-normal truncate hover:text-gray-900">
                   {t(`items.${project.key}`)}
                 </p>

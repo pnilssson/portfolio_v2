@@ -4,11 +4,11 @@ export default function Challenge() {
   const t = useTranslations('offer.challenge');
   
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6" aria-labelledby="challenge-heading">
       <div>
-        <h3 className="text-xl font-medium font-serif">
+        <h1 id="challenge-heading" className="text-xl font-medium font-serif">
           {t('heading')}
-        </h3>
+        </h1>
       </div>
       <div className="flex flex-col gap-4">
         <p>{t('paragraph1')}</p>

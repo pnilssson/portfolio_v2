@@ -48,11 +48,11 @@ export default function Addons() {
   ];
 
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6" aria-labelledby="addons-heading">
       <div>
-        <h3 className="text-xl font-medium font-serif">
+        <h2 id="addons-heading" className="text-xl font-medium font-serif">
           {t('heading')}
-        </h3>
+        </h2>
         <p className="mt-4">{t('intro')}</p>
       </div>
 
@@ -65,13 +65,13 @@ export default function Addons() {
               className="group flex flex-col gap-3 transition-colors"
             >
               <div className="flex items-center gap-3">
-                <Icon className="size-4" />
+                <Icon className="size-4" aria-hidden="true" />
                 <h4 className="font-medium text-base">{service.category}</h4>
               </div>
               <ul className="space-y-4 text-sm pl-8">
                 {service.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-start gap-2.5">
-                    <Circle className="size-1 fill-current flex-shrink-0 mt-3" />
+                    <Circle className="size-1 fill-current flex-shrink-0 mt-3" aria-hidden="true" />
                     <span className="text-base">{item}</span>
                   </li>
                 ))}
