@@ -90,7 +90,6 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         <NextIntlClientProvider>
-          <Navbar />
           {children}
           <Footer />
           <Analytics />
