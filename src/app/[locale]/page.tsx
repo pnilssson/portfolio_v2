@@ -5,7 +5,7 @@ import Work from "@/components/home/workt";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-12 mx-auto max-w-2xl px-6">
+    <main className="flex flex-col gap-12 mx-auto max-w-2xl px-6 pt-24">
       <Hero />
       <Work />
       <Projects />
