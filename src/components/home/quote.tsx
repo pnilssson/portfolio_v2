@@ -27,7 +27,7 @@ export default function Qoute() {
   return (
     <section className="flex flex-col gap-6" aria-labelledby="quote-heading">
       <div>
-        <h2 id="quote-heading" className="text-xl font-medium font-serif">{t("heading")}</h2>
+        <h2 id="quote-heading" className="text-xl font-medium font-heading">{t("heading")}</h2>
       </div>
       <div className="flex flex-col text-normal overflow-hidden ">
         {titles.map((model, index) => (

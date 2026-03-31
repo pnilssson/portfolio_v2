@@ -1,9 +1,7 @@
 {
   "navbar": {
     "home": "jag",
-    "services": "tjänster",
     "ariaHome": "Navigera till startsidan",
-    "ariaServices": "Navigera till tjänster",
     "ariaLabel": "Huvudnavigering"
   },
   "footer": {
@@ -12,7 +10,8 @@
     "ariaGithub": "Besök min GitHub-profil",
     "ariaLinkedin": "Besök min LinkedIn-profil",
     "ariaEmail": "Skicka ett e-postmeddelande till mig",
-    "ariaSocialMedia": "Länkar till sociala medier"
+    "ariaSocialMedia": "Länkar till sociala medier",
+    "cookiePreferences": "Cookieinställningar"
   },
   "languageSwitcher": {
     "ariaSwedish": "Byt till svenska",
@@ -33,6 +32,8 @@
   "projects": {
     "heading": "saker jag har byggt",
     "items": {
+      "vivotiv": "Hemsida och analysverktyg för Vivotiv.",
+      "distillr": "SaaS-plattform för att söka och chatta med YouTube-innehåll.",
       "marialangfors": "Hemsida för Maria Längfors, dietist och personlig tränare.",
       "fonsterputsverket": "Företagshemsida för Fönsterputsverket.",
       "portfolioV1": "Den första versionen av min portfolio."
@@ -71,144 +72,94 @@
       }
     }
   },
-  "offer": {
-    "challenge": {
-      "heading": "utmaningen",
-      "paragraph1": "En hemsida är ofta det första intrycket en kund får av ert företag. Många företag har i dag en sida som inte längre speglar verksamheten, saknar viktiga funktioner eller inte fungerar bra på mobiler.",
-      "paragraph2": "Det kan göra att potentiella kunder går vidare till konkurrenter. En snabb, professionell och modern webbplats gör skillnaden mellan att bara synas och att faktiskt bli vald.",
-      "paragraph3": "Oavsett om ni saknar en hemsida eller vill modernisera en befintlig hjälper jag er att skapa en lösning som stärker ert varumärke och förenklar för era kunder."
+  "cookieBanner": {
+    "ariaLabel": "Cookiemedgivande",
+    "description": "Denna webbplats använder cookies för att förbättra din upplevelse. Vi använder anonym analys för att förstå hur webbplatsen används.",
+    "rejectAll": "Avvisa alla",
+    "managePreferences": "Hantera inställningar",
+    "acceptAll": "Acceptera alla"
+  },
+  "cookiePreferences": {
+    "title": "Cookieinställningar",
+    "description": "Hantera vilka cookies du tillåter. Du kan ändra dessa inställningar när som helst via sidfoten.",
+    "necessary": {
+      "title": "Strikt nödvändiga",
+      "description": "Krävs för att webbplatsen ska fungera korrekt, till exempel språkpreferenser. Kan inte inaktiveras."
     },
-    "packages": {
-      "heading": "paket",
-      "intro": "Välj paket utifrån era behov just nu. Samtliga paket levereras med samma höga standard och inkluderar alltid följande funktioner.",
-      "commonFeatures": {
-        "modern": "Modern och användarvänlig design",
-        "mobile": "Mobilanpassad för alla enheter",
-        "gdpr": "GDPR-policy och cookie-banner",
-        "hosting": "Hosting och drift inkluderad",
-        "ssl": "SSL-certifikat (säker https)",
-        "contact": "Kontaktformulär"
-      },
-      "premium": {
-        "name": "Premiumwebb",
-        "price": "19 999 kr",
-        "description": "För företag som vill ha en komplett och skalbar lösning.",
-        "features": {
-          "everything": "Allt i Tillväxtwebb",
-          "pages": "Upp till 8 sidor",
-          "aiSeo": "AI SEO-optimering (smart analys av nyckelord och innehåll)",
-          "analytics": "Valfri integration för avancerad statistik och analys samt rapportering",
-          "multilang": "Anpassad flerspråkighet (1 ytterligare språk inkluderat)",
-          "chatbot": "Chatbot inkluderat",
-          "advancedForm": "Avancerat kontaktformulär"
-        },
-        "suitedFor": "Passar: Företag som vill ha en flexibel webbplats som kan växa med verksamheten."
-      },
-      "growth": {
-        "name": "Tillväxtwebb",
-        "price": "13 999 kr",
-        "description": "För företag som vill synas bättre och ge kunderna mer information.",
-        "features": {
-          "pages": "Upp till 4 sidor",
-          "seo": "Utökad SEO-optimering",
-          "analytics": "Grundläggande statistik och analysrapportering",
-          "cms": "Innehållshanteringssystem (CMS) för enkel uppdatering",
-          "blog": "Nyhetsflöde / bloggfunktion",
-          "extendedForm": "Utökat kontaktformulär"
-        },
-        "suitedFor": "Passar: Etablerade företag som vill växa digitalt och förbättra sin synlighet."
-      },
-      "starter": {
-        "name": "Startwebb",
-        "price": "7 999 kr",
-        "description": "För företag som vill ha en enkel men professionell närvaro online.",
-        "features": {
-          "landing": "En modern, mobilanpassad och användarvänlig landningssida",
-          "seo": "Grundläggande SEO-optimering",
-          "form": "Grundläggande kontaktformulär"
-        },
-        "suitedFor": "Passar: Mindre företag eller enskilda verksamheter som vill komma igång snabbt."
+    "analytics": {
+      "title": "Analys",
+      "description": "Anonym användningsdata som hjälper till att förbättra webbplatsen. Ingen personlig data samlas in eller säljs till tredje part."
+    },
+    "cancel": "Avbryt",
+    "save": "Spara inställningar"
+  },
+  "privacyPolicy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "Senast uppdaterad: mars 2026",
+    "intro": {
+      "heading": "Introduktion",
+      "text": "Denna integritetspolicy beskriver hur denna webbplats (parnilsson.com) hanterar dina personuppgifter. Webbplatsen drivs av Pär Nilsson. Din integritet är viktig och jag är engagerad i att skydda den."
+    },
+    "dataCollection": {
+      "heading": "Vilka uppgifter som samlas in",
+      "text": "Denna webbplats samlar in minimal data:",
+      "items": {
+        "analytics": "Anonym analysdata (sidvisningar, webbläsartyp, land) via Vercel Analytics. Inga personliga identifierare samlas in.",
+        "locale": "Din språkpreferens lagras lokalt i din webbläsare."
       }
     },
-    "addons": {
-      "heading": "tillägg",
-      "intro": "Utöka efter behov och skräddarsy er lösning med ytterligare tillägg.",
-      "categories": {
-        "expansion": {
-          "name": "Utbyggnad, underhåll och synlighet",
-          "items": {
-            "pages": "Ytterliggare sidor utöver de som ingår",
-            "multilang": "Anpassad flerspråkighet (svenska, engelska, etc.)",
-            "seo": "SEO-analys med löpande förbättringar (avtal månadsvis eller kvartalsvis)",
-            "analytics": "Analytics-rapportering"
-          }
-        },
-        "automation": {
-          "name": "Automation och AI",
-          "items": {
-            "chatbot": "AI-chatbot",
-            "quotes": "Automatiserade offertflöden",
-            "support": "Automatisering av kundsupport",
-            "email": "Automatisering av e-post",
-            "aiText": "Integration av AI-textförslag (blogg, nyheter, produktbeskrivningar)",
-            "custom": "Skräddarsydda AI-lösningar för interna processer"
-          }
-        },
-        "integrations": {
-          "name": "Integrationer och teknik",
-          "items": {
-            "booking": "Integration mot bokningssystem, CRM eller e-postplattform",
-            "payment": "Integration mot betalningslösningar (Stripe, Klarna, Swish etc.)",
-            "api": "API-integrationer mellan olika system (t.ex. offertsystem, logistik eller interna appar)"
-          }
-        },
-        "consulting": {
-          "name": "Konsultation och speciallösningar",
-          "items": {
-            "strategy": "Konsultation kring digital strategi, systemarkitektur eller molninfrastruktur",
-            "domain": "Hjälp med domänhantering och DNS",
-            "special": "Särskilda önskemål eller speciallösningar diskuteras alltid"
-          }
-        }
+    "purpose": {
+      "heading": "Syfte med datainsamling",
+      "text": "Analysdata används enbart för att förstå hur webbplatsen används och för att förbättra upplevelsen. Ingen data används för reklam eller säljs till tredje part."
+    },
+    "thirdParties": {
+      "heading": "Tredje parter",
+      "text": "Webbplatsen är hostad på Vercel. Vercel Analytics samlar in anonym, aggregerad data som inte kan användas för att identifiera enskilda besökare. Inga andra tredjepartstjänster används."
+    },
+    "rights": {
+      "heading": "Dina rättigheter",
+      "text": "Enligt GDPR har du rätt att:",
+      "items": {
+        "access": "Få tillgång till eventuella personuppgifter som finns om dig",
+        "rectification": "Begära rättelse av felaktiga uppgifter",
+        "erasure": "Begära radering av dina uppgifter",
+        "objection": "Invända mot behandling av dina uppgifter"
       }
     },
-    "tools": {
-      "heading": "verktyg",
-      "description": "Jag arbetar med moderna och välkända teknologier som är branschstandard. Det garanterar en stabil och framtidssäker lösning som är enkel att underhålla och vidareutveckla."
+    "contact": {
+      "heading": "Kontakt",
+      "text": "Om du har frågor om denna integritetspolicy, kontakta mig på p.nilsson95@hotmail.com."
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookiepolicy",
+    "lastUpdated": "Senast uppdaterad: mars 2026",
+    "intro": {
+      "heading": "Introduktion",
+      "text": "Denna cookiepolicy förklarar hur denna webbplats (parnilsson.com) använder cookies och liknande teknologier."
     },
-    "process": {
-      "heading": "process",
-      "intro": "Jag arbetar i nära dialog med er för att projektet ska bli smidigt, transparent och effektivt. Ni vet alltid vad som händer och när.",
-      "steps": {
-        "analysis": {
-          "title": "Behovsanalys och planering",
-          "description": "Vi går igenom vilken typ av hemsida ni är ute efter och vilka av min tjänster som passar er. Vi går även igenom era mål, målgrupp och innehåll."
-        },
-        "design": {
-          "title": "Design och demo",
-          "description": "Ni får en klickbar förhandsvisning av en enklare version av er framtida hemsida så att både ni och jag kan känna oss trygga inför nästa steg."
-        },
-        "payment1": {
-          "title": "Första betalningen",
-          "description": "50 procent av det totala priset betalas vid start."
-        },
-        "development": {
-          "title": "Utveckling och testning",
-          "description": "Jag bygger er hemsida enligt era önskemål och testar prestanda samt funktionalitet."
-        },
-        "feedback": {
-          "title": "Demo, feedback och önskemål",
-          "description": "Ni får ytterliggare en demo med färdig design och får möjlighet att ge feedback samt önskemål."
-        },
-        "payment2": {
-          "title": "Andra betalningen",
-          "description": "När ni är nöjda med resultatet betalas resterande 50 procent."
-        },
-        "launch": {
-          "title": "Lansering och support",
-          "description": "Sidan publiceras och jag finns tillgänglig för frågor, uppföljning och framtida sammarbeten."
-        }
+    "whatAreCookies": {
+      "heading": "Vad är cookies?",
+      "text": "Cookies är små textfiler som lagras på din enhet när du besöker en webbplats. De används för att komma ihåg preferenser och förstå hur en webbplats används."
+    },
+    "cookiesWeUse": {
+      "heading": "Cookies vi använder",
+      "necessary": {
+        "title": "Strikt nödvändiga",
+        "text": "Dessa cookies krävs för att webbplatsen ska fungera. Detta inkluderar din språkpreferens och ditt val av cookiemedgivande. De lagras lokalt i din webbläsare och spårar dig inte."
+      },
+      "analytics": {
+        "title": "Analys",
+        "text": "Med ditt samtycke samlar Vercel Analytics in anonym användningsdata som sidvisningar och webbläsartyp. Denna data är aggregerad och kan inte identifiera enskilda besökare. Inga cookies sätts av Vercel Analytics."
       }
+    },
+    "managePreferences": {
+      "heading": "Hantera dina inställningar",
+      "text": "Du kan ändra dina cookieinställningar när som helst genom att klicka på \"Cookieinställningar\" i sidfoten. Du kan också rensa cookies via din webbläsares inställningar."
+    },
+    "contact": {
+      "heading": "Kontakt",
+      "text": "Om du har frågor om denna cookiepolicy, kontakta mig på p.nilsson95@hotmail.com."
     }
   }
 }

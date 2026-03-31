@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="flex flex-col gap-6" aria-labelledby="hero-heading">
       <div>
-        <h1 id="hero-heading" className="text-xl font-medium font-serif">{t("heading")}</h1>
+        <h1 id="hero-heading" className="text-xl font-medium font-heading">{t("heading")}</h1>
       </div>
       <div className="whitespace-pre-wrap">
         <span>{t("prefix")}</span>

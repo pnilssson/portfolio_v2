@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { Analytics } from '@vercel/analytics/next';
-import Script from "next/script";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { CookieConsentProvider } from "@/components/cookies/cookie-consent-provider";
+import { CookieBanner } from "@/components/cookies/cookie-banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 
@@ -87,16 +93,15 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased min-h-screen`}
       >
         <NextIntlClientProvider>
-          {children}
-          <Footer />
-          <Analytics />
-          <Script 
-            src="https://embeds.iubenda.com/widgets/bcad60e2-fc63-4b1c-a4dd-270de198366e.js" 
-            strategy="afterInteractive"
-          />
+          <CookieConsentProvider>
+            {children}
+            <Footer />
+            <Analytics />
+            <CookieBanner />
+          </CookieConsentProvider>
         </NextIntlClientProvider>
       </body>
     </html>

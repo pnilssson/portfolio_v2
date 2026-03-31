@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 
 const projectUrls = [
+  { key: "vivotiv", url: "https://vivotiv.se/" },
+  { key: "distillr", url: "https://www.distillr.co/" },
   { key: "marialangfors", url: "https://www.marialangfors.se/" },
   { key: "fonsterputsverket", url: "https://www.fonsterputsverket.se/" },
   { key: "portfolioV1", url: "https://portfolio-v1-rosy-alpha.vercel.app/" },
@@ -13,7 +15,7 @@ export default function Projects() {
   return (
     <section className="flex flex-col gap-6" aria-labelledby="projects-heading">
       <div>
-        <h2 id="projects-heading" className="text-xl font-medium font-serif">{t("heading")}</h2>
+        <h2 id="projects-heading" className="text-xl font-medium font-heading">{t("heading")}</h2>
       </div>
       <ul className="space-y-4">
         {projectUrls.map((project, index) => (

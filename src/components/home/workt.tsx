@@ -47,7 +47,7 @@ export default function Work() {
 
   return (
     <section className="flex flex-col gap-6" aria-labelledby="work-heading">
-      <h2 id="work-heading" className="text-xl font-medium font-serif">{t("heading")}</h2>
+      <h2 id="work-heading" className="text-xl font-medium font-heading">{t("heading")}</h2>
       <Accordion type="single" collapsible>
         {workItems.map((item, index) => (
           <AccordionItem key={index} value={`item-${index}`}>

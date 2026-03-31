@@ -1,9 +1,7 @@
 {
   "navbar": {
     "home": "me",
-    "services": "services",
     "ariaHome": "Navigate to home page",
-    "ariaServices": "Navigate to services page",
     "ariaLabel": "Main navigation"
   },
   "footer": {
@@ -12,7 +10,8 @@
     "ariaGithub": "Visit my GitHub profile",
     "ariaLinkedin": "Visit my LinkedIn profile",
     "ariaEmail": "Send me an email",
-    "ariaSocialMedia": "Social media links"
+    "ariaSocialMedia": "Social media links",
+    "cookiePreferences": "Cookie Preferences"
   },
   "languageSwitcher": {
     "ariaSwedish": "Switch to Swedish",
@@ -33,6 +32,8 @@
   "projects": {
     "heading": "things I have built",
     "items": {
+      "vivotiv": "Website and audit tool for Vivotiv.",
+      "distillr": "SaaS platform for searching and chatting with YouTube content.",
       "marialangfors": "Website for Maria Längfors, dietitian and personal trainer.",
       "fonsterputsverket": "Company website for Fönsterputsverket.",
       "portfolioV1": "The first version of my portfolio."
@@ -71,144 +72,94 @@
       }
     }
   },
-  "offer": {
-    "challenge": {
-      "heading": "the challenge",
-      "paragraph1": "A website is often the first impression a customer gets of your company. Many companies today have a site that no longer reflects their business, lacks important features, or doesn't work well on mobile devices.",
-      "paragraph2": "This can cause potential customers to move on to competitors. A fast, professional, and modern website makes the difference between just being visible and actually being chosen.",
-      "paragraph3": "Whether you lack a website or want to modernize an existing one, I help you create a solution that strengthens your brand and simplifies for your customers."
+  "cookieBanner": {
+    "ariaLabel": "Cookie consent",
+    "description": "This website uses cookies to improve your experience. We use anonymous analytics to understand how the site is used.",
+    "rejectAll": "Reject all",
+    "managePreferences": "Manage preferences",
+    "acceptAll": "Accept all"
+  },
+  "cookiePreferences": {
+    "title": "Cookie Preferences",
+    "description": "Manage which cookies you allow. You can change these settings at any time via the footer.",
+    "necessary": {
+      "title": "Strictly Necessary",
+      "description": "Required for the website to function properly, such as language preferences. Cannot be disabled."
     },
-    "packages": {
-      "heading": "packages",
-      "intro": "Choose a package based on your current needs. All packages are delivered with the same high standard and always include the following features.",
-      "commonFeatures": {
-        "modern": "Modern and user-friendly design",
-        "mobile": "Mobile-optimized for all devices",
-        "gdpr": "GDPR policy and cookie banner",
-        "hosting": "Hosting and operations included",
-        "ssl": "SSL certificate (secure https)",
-        "contact": "Contact form"
-      },
-      "premium": {
-        "name": "Premium Web",
-        "price": "€1,899",
-        "description": "For companies that want a complete and scalable solution.",
-        "features": {
-          "everything": "Everything in Growth Web",
-          "pages": "Up to 8 pages",
-          "aiSeo": "AI SEO optimization (smart analysis of keywords and content)",
-          "analytics": "Optional integration for advanced statistics and analysis with reporting",
-          "multilang": "Custom multilingual support (1 additional language included)",
-          "chatbot": "Chatbot included",
-          "advancedForm": "Advanced contact form"
-        },
-        "suitedFor": "Suited for: Companies that want a flexible website that can grow with their business."
-      },
-      "growth": {
-        "name": "Growth Web",
-        "price": "€1,299",
-        "description": "For companies that want to be more visible and provide customers with more information.",
-        "features": {
-          "pages": "Up to 4 pages",
-          "seo": "Extended SEO optimization",
-          "analytics": "Basic statistics and analytics reporting",
-          "cms": "Content management system (CMS) for easy updates",
-          "blog": "News feed / blog function",
-          "extendedForm": "Extended contact form"
-        },
-        "suitedFor": "Suited for: Established companies that want to grow digitally and improve their visibility."
-      },
-      "starter": {
-        "name": "Starter Web",
-        "price": "€799",
-        "description": "For companies that want a simple but professional online presence.",
-        "features": {
-          "landing": "A modern, mobile-optimized and user-friendly landing page",
-          "seo": "Basic SEO optimization",
-          "form": "Basic contact form"
-        },
-        "suitedFor": "Suited for: Smaller companies or individual businesses that want to get started quickly."
+    "analytics": {
+      "title": "Analytics",
+      "description": "Anonymous usage data that helps improve the website. No personal data is collected or sold to third parties."
+    },
+    "cancel": "Cancel",
+    "save": "Save preferences"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": {
+      "heading": "Introduction",
+      "text": "This privacy policy describes how this website (parnilsson.com) handles your personal data. The website is operated by Pär Nilsson. Your privacy is important and I am committed to protecting it."
+    },
+    "dataCollection": {
+      "heading": "What data is collected",
+      "text": "This website collects minimal data:",
+      "items": {
+        "analytics": "Anonymous analytics data (page views, browser type, country) via Vercel Analytics. No personal identifiers are collected.",
+        "locale": "Your language preference is stored locally in your browser."
       }
     },
-    "addons": {
-      "heading": "add-ons",
-      "intro": "Expand as needed and customize your solution with additional add-ons.",
-      "categories": {
-        "expansion": {
-          "name": "Expansion, maintenance and visibility",
-          "items": {
-            "pages": "Additional pages beyond those included",
-            "multilang": "Custom multilingual support (Swedish, English, etc.)",
-            "seo": "SEO analysis with ongoing improvements (monthly or quarterly contracts)",
-            "analytics": "Analytics reporting"
-          }
-        },
-        "automation": {
-          "name": "Automation and AI",
-          "items": {
-            "chatbot": "AI chatbot",
-            "quotes": "Automated quote workflows",
-            "support": "Customer support automation",
-            "email": "Email automation",
-            "aiText": "Integration of AI text suggestions (blog, news, product descriptions)",
-            "custom": "Custom AI solutions for internal processes"
-          }
-        },
-        "integrations": {
-          "name": "Integrations and technology",
-          "items": {
-            "booking": "Integration with booking systems, CRM or email platforms",
-            "payment": "Integration with payment solutions (Stripe, Klarna, Swish, etc.)",
-            "api": "API integrations between various systems (e.g. quote systems, logistics or internal apps)"
-          }
-        },
-        "consulting": {
-          "name": "Consulting and custom solutions",
-          "items": {
-            "strategy": "Consultation on digital strategy, system architecture or cloud infrastructure",
-            "domain": "Help with domain management and DNS",
-            "special": "Special requests or custom solutions are always discussed"
-          }
-        }
+    "purpose": {
+      "heading": "Purpose of data collection",
+      "text": "Analytics data is used solely to understand how the website is used and to improve the experience. No data is used for advertising or sold to third parties."
+    },
+    "thirdParties": {
+      "heading": "Third parties",
+      "text": "The website is hosted on Vercel. Vercel Analytics collects anonymous, aggregated data that cannot be used to identify individual visitors. No other third-party services are used."
+    },
+    "rights": {
+      "heading": "Your rights",
+      "text": "Under GDPR, you have the right to:",
+      "items": {
+        "access": "Access any personal data held about you",
+        "rectification": "Request correction of inaccurate data",
+        "erasure": "Request deletion of your data",
+        "objection": "Object to processing of your data"
       }
     },
-    "tools": {
-      "heading": "tools",
-      "description": "I work with modern and well-known technologies that are industry standard. This guarantees a stable and future-proof solution that is easy to maintain and develop further."
+    "contact": {
+      "heading": "Contact",
+      "text": "If you have questions about this privacy policy, contact me at p.nilsson95@hotmail.com."
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": {
+      "heading": "Introduction",
+      "text": "This cookie policy explains how this website (parnilsson.com) uses cookies and similar technologies."
     },
-    "process": {
-      "heading": "process",
-      "intro": "I work in close dialogue with you to make the project smooth, transparent and efficient. You always know what's happening and when.",
-      "steps": {
-        "analysis": {
-          "title": "Needs analysis and planning",
-          "description": "We review what type of website you're looking for and which of my services suit you. We also go through your goals, target audience and content."
-        },
-        "design": {
-          "title": "Design and demo",
-          "description": "You get a clickable preview of a simpler version of your future website so that both you and I can feel confident before the next step."
-        },
-        "payment1": {
-          "title": "First payment",
-          "description": "50 percent of the total price is paid at start."
-        },
-        "development": {
-          "title": "Development and testing",
-          "description": "I build your website according to your wishes and test performance and functionality."
-        },
-        "feedback": {
-          "title": "Demo, feedback and requests",
-          "description": "You get another demo with the finished design and have the opportunity to provide feedback and requests."
-        },
-        "payment2": {
-          "title": "Second payment",
-          "description": "When you're satisfied with the result, the remaining 50 percent is paid."
-        },
-        "launch": {
-          "title": "Launch and support",
-          "description": "The site is published and I'm available for questions, follow-up and future collaborations."
-        }
+    "whatAreCookies": {
+      "heading": "What are cookies?",
+      "text": "Cookies are small text files stored on your device when you visit a website. They are used to remember preferences and understand how a site is used."
+    },
+    "cookiesWeUse": {
+      "heading": "Cookies we use",
+      "necessary": {
+        "title": "Strictly necessary",
+        "text": "These cookies are required for the website to function. This includes your language preference and cookie consent choice. They are stored locally in your browser and do not track you."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "text": "With your consent, Vercel Analytics collects anonymous usage data such as page views and browser type. This data is aggregated and cannot identify individual visitors. No cookies are set by Vercel Analytics."
       }
+    },
+    "managePreferences": {
+      "heading": "Managing your preferences",
+      "text": "You can change your cookie preferences at any time by clicking \"Cookie Preferences\" in the footer. You can also clear cookies through your browser settings."
+    },
+    "contact": {
+      "heading": "Contact",
+      "text": "If you have questions about this cookie policy, contact me at p.nilsson95@hotmail.com."
     }
   }
 }

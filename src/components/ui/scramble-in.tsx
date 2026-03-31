@@ -66,7 +66,8 @@ const ScrambleIn = forwardRef<ScrambleInHandle, ScrambleInProps>(
 
     useEffect(() => {
       if (autoStart) {
-        startAnimation()
+        const id = requestAnimationFrame(() => startAnimation())
+        return () => cancelAnimationFrame(id)
       }
     }, [autoStart, startAnimation])
 
