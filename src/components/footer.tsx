@@ -55,12 +55,12 @@ export default function Footer() {
             <LanguageSwitcher />
           </div>
         </div>
-        <div className="flex flex-col gap-4 text-sm sm:hidden">
+        <div className="flex flex-col gap-4 text-sm sm:hidden items-start">
           <PrivacyPolicy />
           <CookiePolicy />
           <button
             onClick={openPreferences}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer text-left"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
           >
             {t("cookiePreferences")}
           </button>
