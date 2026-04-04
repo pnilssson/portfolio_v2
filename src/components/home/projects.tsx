@@ -6,7 +6,7 @@ const projectUrls = [
   { key: "distillr", url: "https://github.com/pnilssson/distillr" },
   { key: "marialangfors", url: "https://www.marialangfors.se/" },
   { key: "fonsterputsverket", url: "https://www.fonsterputsverket.se/" },
-  { key: "portfolioV1", url: "https://portfolio-v1-rosy-alpha.vercel.app/" },
+  { key: "portfolioV1", url: "https://github.com/pnilssson/portfolio_v1" },
 ];
 
 export default function Projects() {
